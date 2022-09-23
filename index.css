@@ -23,7 +23,6 @@ body {
     align-items: center;
     background-color: var(--color-first);
     padding:0.5%;
-    height: 2%;
     color:black;
     width: 100%;
 }
@@ -188,11 +187,17 @@ footer img{
         width: 80%;
     }
 
+    .home{
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
     .title{
         margin-top: 5%;
         margin-left: 20%;
         margin-right: 20%;
         font-size: 4em;
+        line-height: 1.2em;
     }
 
     .title2{
@@ -217,9 +222,9 @@ footer img{
     }
 
     #menu-hide{
-        width: 45%;
-        height: 40%;
-        font-size: 2em;
+        width: 35%;
+        height: 35%;
+        font-size: 1.5em;
     }
 }
 
