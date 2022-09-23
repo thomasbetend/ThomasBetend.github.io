@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon portfolio</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -26,23 +26,34 @@
                 <li><a class="link-black" href="./contact.html">Contact</a></li>
             </ul>
     </div>
-    <div class="cursor">
-    </div>
-    <div class="container">
-        <div class="title">Thomas Bétend</div>
-        <div class="title2">Développeur Web / Applications mobiles / Front End / Back End</div>
-        <div class="links">
-            <div class="btn btn1"><a href="./experiences.html">Expériences</a></div>
-            <div class="btn btn2"><a href="">Frameworks</a></div>          
-            <div class="btn btn3"><a href="./contact.html">Contact</a></div>
+    <div class="container1">
+        <div class="title">Contact</div>
         </div class="image-central">
-        <img src="./_assets/visuel_central2.png" alt="ordinateur" id="image-central">
+        <img src="./_assets/visuel-contact.png" alt="enveloppes" id="image-central">
         <div>
-        </div>
-
+    </div>
+    <div class="container2">
+        <form action="" method="post" class="form-contact">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="user-name" id="name">
+             </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="user-email" id="email">
+            </div>
+            <div>
+                <div><label for="msg">Message</label></div>
+                <div><textarea name="user-msg" id="msg" cols="30" rows="10"></textarea> </div>
+            </div>
+            <p>
+                <button id="btn-form" type="submit">Send Message</button>
+            </p>
+        </form>
     </div>
 
     <footer>
+        <div class="legend"><span>Thomas Bétend</span> // Développeur Web / Applications mobiles / Front End / Back End</div>
         <div class="logos-footer">
         <img src="./_assets/LinkedIn-Symbole2.png" alt="">
         <img src="./_assets/Facebook-Symbole2.png" alt="">
@@ -53,4 +64,4 @@
 
 </html>
 
-<script src="./index.js"></script>
+<script src="contact.js"></script>
