@@ -1,0 +1,162 @@
+body {
+    background-image: "./stack_technique.png";
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 50;
+    color: var(--color-second);
+    margin-top: 3%;
+    text-transform: uppercase;
+}
+
+#image-central {
+    width: 5%;
+    opacity: 30%;
+    margin: 2%;
+}
+
+.link-black:hover{
+    color: black;
+}
+
+.content-principal {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.framework {
+    background-color: black;
+    margin: 1%;
+    text-align: center;
+    padding:3%;
+    width: 40%;
+    border: 1px solid var(--color-first);
+    border-radius: 0.7em;
+    transition: background-color 0.5s;
+    display: flex;
+    flex-direction: column;
+}
+
+/* .framework:hover{
+    background-color: var(--color-first);
+    color: black;
+    border: 1px solid var(--color-first)
+} */
+
+.title-framework {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin-bottom: 2%;
+    color: white;
+}
+
+.content-framework {
+    text-align: center;
+    list-style: none;
+    color: var(--color-second);
+}
+
+.picto-framework1 img {
+    max-width: 110px;
+    margin-top: 5%;
+}
+
+.picto-framework2 img {
+    max-width: 110px;
+    margin-top: 8%;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .title {
+        margin-top: 5%;
+        font-size: 2.5em;
+    }
+
+    #image-central {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        width: 15%;
+    }
+
+    .content-principal {
+        display: flex;
+        flex-direction: column;        
+        text-align: center;
+        align-items: center;
+    }
+
+    .framework {
+        background-color: black;
+        margin: 2%;
+        text-align: center;
+        padding:3%;
+        width: 80%;
+        border: 1px solid var(--color-first);
+        transition: background-color 0.5s;
+    }
+
+    .title-framework {
+        margin-bottom: 1%;
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-width: 465px) {
+
+    .title {
+        margin-top: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 2.5em;
+    }
+
+    #image-central {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        width: 15%;
+    }
+
+    .content-principal {
+        display: flex;
+        flex-direction: column;        
+        text-align: center;
+        align-items: center;
+    }
+
+    .framework {
+        background-color: black;
+        margin: 2%;
+        text-align: center;
+        padding:3%;
+        width: 80%;
+        border: 1px solid var(--color-first);
+        transition: background-color 0.5s;
+    }
+
+    .title-framework {
+        margin-bottom: 1%;
+        margin-top: 4%;
+    }
+
+    .legend {
+        font-size: 0.7em;
+        padding: 3%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .picto-framework1 img {
+        max-width: 70px;
+        margin-top: 5%;
+    }
+    
+    .picto-framework2 img {
+        max-width: 70px;
+        margin-top: 6%;
+    }
+}
+

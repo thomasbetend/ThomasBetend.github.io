@@ -4,81 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio TB</title>
+    <title>Thomas Bétend</title>
     <link rel="stylesheet" href="experiences.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="nav-bar.css">
+    <link rel="stylesheet" href="footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
 </head>
 <body>
-    <div class="nav-bar">
-        <div class="home">
-            <a href="./index.html">TB</a>
+    <nav class="nav-bar">
+        <div class="logo-home">
+            <a href="./index.html"><img src="./logo-tb-05.png" alt="picto tb"></a>
         </div>
         <a href="#" id="icone-menu-b"><img src="./icons8-menu-arrondi-50.png" alt="icone menu"></a>
-    </div>    
-    <div class="menu-hide" id="menu-hide">           
-            <a href="#" id="icone-menu-h"><img src="./croix-blanche.png" alt="croix blanche"></a>
-            <ul>
-                <li><a class="link-black" href="./index.html">Home</a></li>
-                <li><a class="link-black" href="./experiences.html">Expériences</a></li>
-                <li><a class="link-black" href="./frameworks.html">Frameworks</a></li>
-                <li><a class="link-black" href="./contact.html">Contact</a></li>
-            </ul>
-    </div>
-    <div class="container1">
-        <div class="title">Expériences</div>
-        <div class="image-central">
+    </nav>    
+    <menu class="menu-hide" id="menu-hide">           
+        <a href="#" id="icone-menu-h"><img src="./croix-blanche.png" alt="croix blanche"></a>
+        <ul>
+            <li><a class="link-black" href="./home.html">Home</a></li>
+            <li><a class="link-black" href="./experiences.html">Expériences</a></li>
+            <li><a class="link-black" href="./stack.html">Stack technique</a></li>
+            <li><a class="link-black" href="./realisations.html">Réalisations</a></li>
+            <li><a class="link-black" href="./cursus.html">Cursus</a></li>
+            <li><a class="link-black" href="./contact.html">Contact</a></li>
+        </ul>
+    </menu>
+    <main>
+        <div class="title-principal">
+            <div class="title">Expériences</div>
             <img src="./visuel-experiences.png" alt="illustration technologique" id="image-central">
         </div>
-    </div>
-    <div class="container2">
-        <div class="experiences">
-                <div class="title-experiences">
+        <div class="content-principal">
+            <div class="experience">
+                <div class="title-experience">
                     Graphiste </br><span>JCDecaux</span>
                 </div>
-                <div class="content-experiences">
-                        <p>17 ans</p>
-                        <p>Suite Adobe <br/> Indesign / Photoshop / Illustrator</p>
-                        <p>Print</p>
-                        <p>Flyers, Illustrations, Affiches</p>
+                <div class="content-experience">
+                    <p class="duration">17 ans</p>
+                    <p class="langage">Suite Adobe <br/> Indesign / Photoshop / Illustrator</p>
+                    <p class="device">Print</p>
+                    <p class="description">Flyers, Illustrations, Affiches</p>
                 </div>
-    </div>
-    <div class="experiences">
-                    <div class="title-experiences">
-                        Formation </br><span>Donkey School</span> 
-                    </div>
-                    <div class="content-experiences">
-                            <p>7 mois</p>
-                            <p>HTML // CSS // JS // ANGULAR // PHP // SYMFONY</p>
-                            <p>Web</p>
-                            <p>Sites / Applis</p>
-                    </div>
-    </div>
-    <div class="experiences">
-                    <div class="title-experiences">
-                        Stage </br><span>Entreprise</span> 
-                    </div>
-                    <div class="content-experiences">
-                        <p>
-                            <p>3 mois</p>
-                            <p>HTML // CSS // JS // ANGULAR // PHP // SYMFONY</p>
-                            <p>Web</p>
-                            <p>Sites / Applis</p>
-                        </p>
-                    </div>
-    </div>
-    </div>
+            </div>
+            <div class="experience">
+                <div class="title-experience">
+                    Formation </br><span>Donkey School</span> 
+                </div>
+                <div class="content-experience">
+                    <p class="duration">7 mois</p>
+                    <p class="langage">HTML / CSS / JS / ANGULAR / PHP / SYMFONY</p>
+                    <p class="device">Web</p>
+                    <p class="description">Sites / Applis</p>
+                </div>
+            </div>
+            <div class="experience">
+                <div class="title-experience">
+                    Stage </br><span>Entreprise</span> 
+                </div>
+                <div class="content-experience">
+                    <p class="duration">3 mois</p>
+                    <p class="langage">HTML / CSS / JS / ANGULAR / PHP / SYMFONY</p>
+                    <p class="device">Web</p>
+                    <p class="description">Sites / Applis</p>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer>
         <div class="legend"><span>Thomas Bétend</span> // Développeur Web / Applications mobiles / Front End / Back End</div>
-        <div class="logos-footer">
-        <img src="./LinkedIn-Symbole2.png" alt="logo linkedin">
-        <img src="./Facebook-Symbole2.png" alt="logo facebook">
-        <img src="./Insta-Symbole2.png" alt="logo instagram">
-        <div>
+        <div class="pictos-footer">
+            <div class="picto-social-footer2">
+                <a href="https://fr.linkedin.com/in/thomas-betend-31427518" target="_blank">
+                    <img src="./LinkedIn-Symbole2.png" alt="logo linkedin">
+                </a>
+            </div>
+            <div class="picto-social-footer2">
+                <a href="https://fr-fr.facebook.com/thomas.betend" target="_blank">
+                    <img src="./Facebook-Symbole2.png" alt="logo facebook">
+                </a>
+            </div>
+                <a href=""></a>
+            <div class="picto-social-footer2">
+                <a href="https://www.instagram.com/thomasbetend/?hl=fr" target="_blank">
+                    <img src="./Insta-Symbole2.png" alt="logo instagram">
+                </a>
+            <div>
+        </div>
     </footer>
 </body>
 
 </html>
 
-<script src="experiences.js"></script>
+<script src="menu.js"></script>

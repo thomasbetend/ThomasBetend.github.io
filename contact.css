@@ -1,117 +1,33 @@
-* {
-    font-family: Oswald, Arial, Helvetica, sans-serif;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --color-first:rgb(0, 127, 166);
-    --color-second:rgb(77, 222, 255);
-}
-
-body {
-    background-color: black;
-}
-
-.nav-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--color-first);
-    padding:0.5%;
-    height: 2%;
-    color:white;
-    width: 100%;
-}
-
-.menu-nav {
-    display: flex;
-    justify-content: space-between;
-}
-
 .title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 50;
     color: var(--color-second);
     margin-top: 3%;
     text-transform: uppercase;
 }
 
-.nav-bar img {
-    width: 40%;
-}
-
-.nav-bar a {
-    width: 5%;
-}
-
-.home{
-    padding-left: 1%;
-}
-
 #image-central {
-    width: 10%;
+    width: 5%;
     opacity: 40%;
-    z-index: 1;
-    position: relative;
-    top: left;
+    margin-top: 1%;
 }
 
-.menu-hide {
-    position:fixed; 
-    z-index:9999; 
-    right:-250px; 
-    top:0px; 
-    background:var(--color-first); 
-    padding-right: 2%; 
-    width: 12%; 
-    height: 30%;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    font-size: 1.2em;
-    transition: right 0.7s ease;
-}
-.link-black:hover{
-    color: black;
-}
-
-.active{
-    right: 0px;
-}
-
-.menu-hide img{
-    width: 15%;
-    padding: 2%;
-}
-
-#icone-menu-h{
-    text-align: right;
-    padding-top: 10px;
-}
-
-.menu-hide ul li {
-    list-style: none;
-    text-align: right;
-}
-
-.container2 {
+.content-principal {
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
+.content-principal div {
+    margin-bottom: 0.5%;
+}
+
 .form-contact {
-    background-color: black;
     margin: 1%;
-    text-align: center;
     padding:2%;
-    width: 40%;
-    border: 1px solid var(--color-second);
+    width: 60%;
+    background-color: rgb(63, 63, 63);
+    border-radius: 10px;
 }
 
 label {
@@ -121,93 +37,94 @@ label {
 	text-align: left;
 }
 
-textarea {
-	width: 100%;
-	height: 5em;
-    color: grey;
-    text-align: left;
-    border: 0px;
-}
-
 #name {
-    color: grey;
     text-align: left;
     border: 0px;
     width: 100%;
+    height: 30px;
+    border-radius: 0.5em;
+    padding-left : 15px;
+    color: rgb(74, 74, 74);
+    font-size: 1em;
+}
+
+#name::placeholder {
+    color: rgb(74, 74, 74);
 }
 
 #email {
+    text-align: left;
+    padding-left : 15px;
+    color: rgb(74, 74, 74);
+    border: 0px;
+    width: 100%;
+    height: 30px;
+    border-radius: 0.5em;
+    font-size: 1em;
+}
+
+#email::placeholder {
+    color: rgb(74, 74, 74);
+}
+
+textarea {
+	width: 100%;
+	height: 10em;
     color: grey;
     text-align: left;
     border: 0px;
-    width: 100%;
+    margin-bottom: 1%;
+    border-radius: 0.5em;
+    padding-left : 15px;
+    color: rgb(74, 74, 74);
+    padding-top: 10px;
+    font-size: 1em;
+}
+
+textarea::placeholder {
+    color: rgb(74, 74, 74);
 }
 
 #btn-form {
     background-color: var(--color-first);
     display: inline-block;
     border: 0px solid #cccccc;
-    width: 100%;
+    min-width: 30%;
+    height: 40px;
     cursor: pointer;
-}
-
-
-.legend {
-    text-transform: uppercase;
     color: white;
-    font-size: O.5rem;
-    margin-top: 2%;
-    margin-bottom: 0.5%;
-    opacity: 30%;
+    border-radius: 0.5em;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
-.logos-footer {
-    display: flex;
-    justify-content: center;
-    opacity: 30%;
-
+#btn-form:hover {
+    background-color: black;
 }
 
-footer img{
-    width: 3%;
-}
+@media screen and (max-width: 768px) {
 
-@media screen and (max-width: 414px) {
-
-    .nav-bar img {
-        width: 80%;
+    .form-contact {
+        width: 70%;
     }
+
+}
+
+@media screen and (max-width: 465px) {
 
     .title{
         margin-top: 5%;
-        font-size: 3.5em;
+        font-size: 2.5em;
     }
 
     #image-central {
         margin-top: 2%;
         margin-bottom: 2%;
-        width: 20%;
-    }
-
-    footer img {
-        width: 10%
-    }
-
-    #menu-hide{
-        width: 35%;
-        height: 35%;
-        font-size: 1.5em;
+        width: 10%;
     }
 
     .form-contact {
-        width: 90%;
+        width: 80%;
     }
 
-    .legend{
-        font-size: 0.7em;
-        padding-top: 5%;
-        padding-bottom: 2%;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
 }

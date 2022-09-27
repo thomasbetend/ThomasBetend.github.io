@@ -1,0 +1,40 @@
+.title {
+    font-size: 2.5rem;
+    font-weight: 50;
+    color: var(--color-second);
+    margin-top: 3%;
+    text-transform: uppercase;
+}
+
+.studies {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.school {
+    color: white;
+}
+
+.description-study {
+    color: var(--color-first)
+}
+
+.dates {
+    color: var(--color-first)
+}
+
+
+
+
+@media screen and (max-width: 465px) {
+
+    .title{
+        margin-top: 5%;
+        font-size: 2.5em;
+    }
+
+
+
+}

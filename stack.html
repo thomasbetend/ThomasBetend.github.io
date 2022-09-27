@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thomas Bétend</title>
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="stack.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="nav-bar.css">
@@ -22,39 +22,44 @@
         <a href="#" id="icone-menu-b"><img src="./icons8-menu-arrondi-50.png" alt="icone menu"></a>
     </nav>    
     <menu class="menu-hide" id="menu-hide">           
-            <a href="#" id="icone-menu-h"><img src="./croix-blanche.png" alt="icone cross"></a>
-            <ul>
-                <li><a class="link-black" href="./home.html">Home</a></li>
-                <li><a class="link-black" href="./experiences.html">Expériences</a></li>
-                <li><a class="link-black" href="./stack.html">Stack technique</a></li>
-                <li><a class="link-black" href="./realisations.html">Réalisations</a></li>
-                <li><a class="link-black" href="./cursus.html">Cursus</a></li>
-                <li><a class="link-black" href="./contact.html">Contact</a></li>
-            </ul>
+        <a href="#" id="icone-menu-h"><img src="./croix-blanche.png" alt="croix blanche"></a>
+        <ul>
+            <li><a class="link-black" href="./home.html">Home</a></li>
+            <li><a class="link-black" href="./experiences.html">Expériences</a></li>
+            <li><a class="link-black" href="./stack.html">Stack technique</a></li>
+            <li><a class="link-black" href="./realisations.html">Réalisations</a></li>
+            <li><a class="link-black" href="./cursus.html">Cursus</a></li>
+            <li><a class="link-black" href="./contact.html">Contact</a></li>
+        </ul>
     </menu>
     <main>
         <div class="title-principal">
-            <div class="title">Contact</div>
-            <img src="./visuel-contact.png" alt="enveloppes" id="image-central">
+            <div class="title">Stack technique</div>
+            <img src="./visuel-frameworks.png" alt="illustration cube" id="image-central">
         </div>
         <div class="content-principal">
-            <form action="./index.html" method="post" class="form-contact">
-                <div>
-                    <label for="name"></label>
-                    <input type="text" name="user-name" id="name" placeholder="Votre nom">
+            <div class="framework">
+                <div class="title-framework">
+                    Angular
                 </div>
-                <div>
-                    <label for="email"></label>
-                    <input type="email" name="user-email" id="email" placeholder="Votre mail">
+                <div class="content-framework">
+                    <p>Framework JavaScript</p>
                 </div>
-                <div>
-                    <div><label for="msg"></label></div>
-                    <div><textarea name="user-msg" id="msg" cols="30" rows="10" placeholder="Votre message"></textarea> </div>
+                <div class="picto-framework1">
+                    <img src="./logo-angular.png" alt="picto angular">
                 </div>
-                <p>
-                    <button id="btn-form" type="submit">Envoyez votre Message</button>
-                </p>
-            </form>
+            </div>
+            <div class="framework">
+                <div class="title-framework">
+                    Symfony
+                </div>
+                <div class="content-framework">
+                    <p>Framework PHP</p>
+                </div>
+                <div class="picto-framework2">
+                    <img src="./symfony_white_03-1.png" alt="picto symfony">
+                </div>
+            </div>
         </div>
     </main>
     <footer>
