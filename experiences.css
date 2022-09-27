@@ -8,8 +8,9 @@
 }
 
 #image-central {
-    width: 8%;
-    opacity: 40%;
+    width: 4%;
+    margin-bottom: 1%;
+    opacity: 50%;
 }
 
 .link-black:hover {
@@ -20,6 +21,9 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    min-height: 300px;
 }
 
 .experience {
@@ -29,11 +33,13 @@
     padding:3%;
     width: 20%;
     border: 1px solid var(--color-first);
-    border-radius: 0.7em;
+    border-radius: 0.5em;
     transition: background-color 0.5s;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     min-width: 30%;
+    min-height: 50%;
 }
 
 /*.experience:hover {
@@ -43,7 +49,6 @@
 }*/
 
 .title-experience {
-    text-transform: uppercase;
     font-size: 1.4rem;
     margin-bottom: 3%;
     color: white;
@@ -56,34 +61,56 @@
 }
 
 .duration {
-    color:aqua;
+    color: var(--color-second);
     opacity: 50%;
+    font-size: 0.8em;
+    padding-bottom: 3%;
 }
 
 .langage {
     text-transform: uppercase;
-    padding-bottom: 1%;
-    color:aqua;
+    padding-bottom: 3%;
+    color: var(--color-second);
 }
 
 .device {
     color: grey;
+    font-size: 0.9em;
 }
 
 .description {
     color: grey;
     opacity: 50%;
+    font-size: 0.6em;
+    font-style: italic;
 }
 
-.logos-footer {
-    display: flex;
-    justify-content: center;
-    opacity: 30%;
-    margin-bottom: 3%;
+.btn2 {
+    margin-top: 3%;
+    background-color:black;
+    border-radius: 0.3em;
+    padding: 1%;
+    text-decoration: none;
+    font-size: 1em;  
+    transition: background-color 0.5s;
+    border: 1px solid var(--color-four);
+    min-width: 8em;
+    opacity: 50%;
+    font-size: 0.8em;
+}
+
+.btn2 a {
+    color:white;
+}
+
+.btn2:hover{
+    background-color: var(--color-four);
+    color: black;
+    border: 1px solid var(--color-four)
 }
 
 
-@media screen and (max-width: 465px) {
+@media screen and (max-width: 768px) {
 
     .title {
         margin-top: 5%;
@@ -101,6 +128,51 @@
         flex-direction: column;        
         text-align: center;
         align-items: center;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .experience {
+        background-color: black;
+        margin: 2%;
+        text-align: center;
+        padding:3%;
+        width: 80%;
+        border: 1px solid var(--color-first);
+        transition: background-color 0.5s;
+    }
+
+    .title-experience {
+        margin-bottom: 1%;
+        font-size: 1.5em;
+    }
+
+    .btn2 {
+        min-width: 11em;
+    }
+
+}
+
+@media screen and (max-width: 465px) {
+
+    .title {
+        margin-top: 5%;
+        font-size: 3em;
+    }
+
+    #image-central {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        width: 10%;
+    }
+
+    .content-principal {
+        display: flex;
+        flex-direction: column;        
+        text-align: center;
+        align-items: center;
+        margin-left: 0%;
+        margin-right: 0%;
     }
 
     .experience {

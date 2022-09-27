@@ -52,12 +52,14 @@
     color: var(--color-second);
     font-size: 1.1rem;
     line-height: 1.4em;
+    margin-bottom: 1%;
 }
 
 .title3 {
     color: rgb(200,200,200);
     text-transform: capitalize;
     opacity: 50%;
+    font-size: 0.8em;
 }
 
 .links {
@@ -106,7 +108,7 @@
 
 #image-central {
     width: 50%;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
 }
 
 footer {
