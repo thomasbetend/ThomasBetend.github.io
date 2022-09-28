@@ -71,17 +71,17 @@ body {
 }
 
 .btn2 {
-    margin-top: 3%;
-    background-color:black;
+    margin-top: 0%;
+    background-color:var(--color-first);
     border-radius: 0.3em;
     padding: 1%;
     text-decoration: none;
     font-size: 1em;  
     transition: background-color 0.5s;
-    border: 1px solid var(--color-four);
+    border: 1px solid var(--color-first);
     min-width: 8em;
-    opacity: 50%;
     font-size: 0.8em;
+    margin-top: 7%;
 }
 
 .btn2 a {
@@ -89,9 +89,10 @@ body {
 }
 
 .btn2:hover{
-    background-color: var(--color-four);
+    background-color: black;
     color: black;
-    border: 1px solid var(--color-four)}
+    border: 1px solid var(--color-first)
+}
 
 
 @media screen and (max-width: 768px) {
@@ -133,6 +134,11 @@ body {
     .title-framework {
         margin-bottom: 1%;
         margin-top: 5%;
+    }
+
+    .btn2 {
+        min-width: 15em;
+        font-size: 1em;
     }
 }
 
@@ -190,6 +196,11 @@ body {
     .picto-framework2 img {
         max-width: 70px;
         margin-top: 6%;
+    }
+
+    .btn2 {
+        min-width: 15em;
+        font-size: 1em;
     }
 }
 

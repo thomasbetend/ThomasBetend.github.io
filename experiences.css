@@ -86,17 +86,17 @@
 }
 
 .btn2 {
-    margin-top: 3%;
-    background-color:black;
+    margin-top: 0%;
+    background-color:var(--color-first);
     border-radius: 0.3em;
     padding: 1%;
     text-decoration: none;
     font-size: 1em;  
     transition: background-color 0.5s;
-    border: 1px solid var(--color-four);
+    border: 1px solid var(--color-first);
     min-width: 8em;
-    opacity: 50%;
     font-size: 0.8em;
+    margin-top: 7%;
 }
 
 .btn2 a {
@@ -104,11 +104,10 @@
 }
 
 .btn2:hover{
-    background-color: var(--color-four);
+    background-color: black;
     color: black;
-    border: 1px solid var(--color-four)
+    border: 1px solid var(--color-first)
 }
-
 
 @media screen and (max-width: 768px) {
 
@@ -120,7 +119,7 @@
     #image-central {
         margin-top: 2%;
         margin-bottom: 2%;
-        width: 30%;
+        width: 10%;
     }
 
     .content-principal {
@@ -136,7 +135,7 @@
         background-color: black;
         margin: 2%;
         text-align: center;
-        padding:3%;
+        padding: 6%;
         width: 80%;
         border: 1px solid var(--color-first);
         transition: background-color 0.5s;
@@ -148,7 +147,8 @@
     }
 
     .btn2 {
-        min-width: 11em;
+        min-width: 15em;
+        font-size: 1em;
     }
 
 }
@@ -179,7 +179,7 @@
         background-color: black;
         margin: 2%;
         text-align: center;
-        padding:3%;
+        padding: 6%;
         width: 80%;
         border: 1px solid var(--color-first);
         transition: background-color 0.5s;
@@ -188,6 +188,11 @@
     .title-experience {
         margin-bottom: 1%;
         font-size: 1.5em;
+    }
+
+    .btn2 {
+        min-width: 15em;
+        font-size: 1em;
     }
 
 }

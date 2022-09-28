@@ -30,7 +30,7 @@
 .study1 {
     background-color: black;
     text-align: center;
-    padding:6%;
+    padding: 6%;
     border-right: 1px solid var(--color-first);
     width: 33%;
 }
@@ -44,18 +44,19 @@
 
 .school {
     color: white;
-    font-size: 1.5em;
+    font-size: 150%;
     padding-bottom: 5%;
 }
 
 .description-study {
-    color: var(--color-second)
+    color: var(--color-second);
 }
 
 .dates {
     color: var(--color-first);
     font-style: italic;
     font-size: 0.8em;
+    padding-bottom: 5%;
 }
 
 .place {
@@ -64,15 +65,14 @@
 
 .btn2 {
     margin-top: 3%;
-    background-color:black;
+    background-color:var(--color-first);
     border-radius: 0.3em;
     padding: 1%;
     text-decoration: none;
     font-size: 1em;  
     transition: background-color 0.5s;
-    border: 1px solid var(--color-four);
+    border: 1px solid var(--color-first);
     min-width: 8em;
-    opacity: 50%;
     font-size: 0.8em;
     margin-top: 7%;
 }
@@ -82,25 +82,33 @@
 }
 
 .btn2:hover{
-    background-color: var(--color-four);
+    background-color: black;
     color: black;
-    border: 1px solid var(--color-four)
+    border: 1px solid var(--color-first)
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 465px) {
+    .studies {
+        margin-left: 5%;
+        margin-right: 5%;
+}
+}
+
+@media screen and (max-width: 465px) {
 
     #image-central {
         width: 7%;
     }
     .title{
         font-size: 2.5em;
+        margin-top: 5%;
     }
 
     .studies {
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
-        margin-top: 3%;
         min-height: 40%;
     }
 
@@ -110,15 +118,15 @@
         padding:6%;
         border-right: 0px solid var(--color-first);
         border-top: 1px solid var(--color-first);
-        width: 33%;
+        width: 80%;
     }
     
     .study2 {
         background-color: black;
         border-top: 1px solid var(--color-first);
         text-align: center;
-        padding:6%;
-        width: 33%;
+        padding: 6%;
+        width: 80%;
     }
 
 
