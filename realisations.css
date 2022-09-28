@@ -13,42 +13,19 @@
     opacity: 50%;
 }
 
-.button-contact-footer {
-    margin-top: 0%;
-    background-color:var(--color-first);
-    border-radius: 0.3em;
-    padding: 1%;
-    text-decoration: none;
-    font-size: 1em;  
-    transition: background-color 0.5s;
-    border: 1px solid var(--color-first);
-    min-width: 8em;
-    font-size: 0.8em;
-    margin-top: 7%;
-}
+@media screen and (max-width: 820px) {
 
-.button-contact-footer a {
-    color:white;
-}
+    .title {
+        margin-top: 5%;
+        font-size: 3.5em;
+    }
 
-.button-contact-footer:hover{
-    background-color: black;
-    color: black;
-    border: 1px solid var(--color-first)
-}
-
-@media screen and (max-width: 768px) {
-    .button-contact-footer {
-        min-width: 15em;
-        font-size: 1em;
+    #image-central {
+        width: 10%;
     }
 }
 
 @media screen and (max-width: 465px) {
-    .button-contact-footer {
-        min-width: 15em;
-        font-size: 1em;
-    }
 
     #image-central {
         width: 15%;

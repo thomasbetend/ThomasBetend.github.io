@@ -48,75 +48,38 @@
     padding-bottom: 5%;
 }
 
-.description-study {
+.study-description {
     color: var(--color-second);
 }
 
-.dates {
+.study-dates {
     color: var(--color-first);
     font-style: italic;
     font-size: 0.8em;
     padding-bottom: 5%;
 }
 
-.place {
+.study-place {
     color: white;
     opacity: 30%;
 }
 
-.button-contact-footer {
-    margin-top: 3%;
-    background-color:var(--color-first);
-    border-radius: 0.3em;
-    padding: 1%;
-    text-decoration: none;
-    font-size: 1em;  
-    transition: background-color 0.5s;
-    border: 1px solid var(--color-first);
-    min-width: 8em;
-    font-size: 0.8em;
-    margin-top: 7%;
-}
+@media screen and (max-width: 820px) {
 
-footer a {
-    color:white;
-}
-
-.button-contact-footer:hover{
-    background-color: black;
-    color: black;
-    border: 1px solid var(--color-first)
-}
-
-@media screen and (max-width: 465px) {
-    .study {
-        margin-left: 5%;
-        margin-right: 5%;
-}
-}
-
-@media screen and (max-width: 465px) {
-
-    #image-central {
-        width: 7%;
-    }
-    .title{
-        font-size: 2.5em;
+    .title {
         margin-top: 5%;
+        font-size: 3.5em;
     }
 
     .study {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
         min-height: 40%;
     }
 
     .study1 {
-        background-color: black;
-        text-align: center;
-        padding:6%;
         border-right: 0px solid var(--color-first);
         border-top: 1px solid var(--color-first);
         width: 80%;
@@ -125,11 +88,77 @@ footer a {
     .study2 {
         background-color: black;
         border-top: 1px solid var(--color-first);
-        text-align: center;
         padding: 6%;
         width: 80%;
     }
 
+    .study-title {
+        color: white;
+        font-size: 2.4em;
+        padding-bottom: 3%;
+    }
 
+    .study-description {
+        font-size: 1.6em;
+    }
+    
+    .study-dates {
+        font-size: 1.4em;
+        padding-bottom: 1%;
+    }
+
+    .study-place {
+        font-size: 1.3em;
+    }
+    
+
+}
+
+@media screen and (max-width: 465px) {
+
+    #image-central {
+        width: 12%;
+    }
+    .title{
+        font-size: 2.5em;
+        margin-top: 5%;
+    }
+
+    .study {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        min-height: 40%;
+    }
+
+    .study1 {
+        border-right: 0px solid var(--color-first);
+        border-top: 1px solid var(--color-first);
+        width: 80%;
+    }
+    
+    .study2 {
+        border-top: 1px solid var(--color-first);
+        width: 80%;
+    }
+
+    .study-title {
+        font-size: 150%;
+        padding-bottom: 5%;
+    }
+    
+    .study-description {
+        font-size: 1.2em;
+    }
+    
+    .study-dates {
+        font-size: 1em;
+        padding-bottom: 2%;
+    }
+    
+    .study-place {
+        font-size: 1em;
+    }
 
 }

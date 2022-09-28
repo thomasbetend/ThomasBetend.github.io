@@ -1,5 +1,6 @@
 .nav-bar {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-first);
@@ -28,10 +29,10 @@
 }
 
 .button-home a img {
-    width: 25px;
+    width: 35px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
 
     .nav-bar img {
         width: 50%;
