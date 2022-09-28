@@ -13,15 +13,21 @@
     width: 50%;
 }
 
-.logo-home{
+.button-menu-burger a {
+    height: 40px;
+}
+
+.button-home {
     width: 5%;
 }
 
-.logo-home a {
+.button-home a {
     color: white;
+    width: 40px;
+    height: 40px;
 }
 
-.logo-home a img {
+.button-home a img {
     width: 25px;
 }
 
@@ -37,7 +43,7 @@
         padding-bottom: 2%;
     }
 
-    .logo-home {
+    .button-home {
         margin-left: 15px;
     }
 }
@@ -54,7 +60,7 @@
         padding-bottom: 2%;
     }
 
-    .logo-home {
+    .button-home {
         margin-left: 15px;
     }
 }
