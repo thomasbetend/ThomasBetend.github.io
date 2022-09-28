@@ -1,0 +1,134 @@
+.content-principal {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#image-central {
+    margin-top: 1%;
+    width: 6%;
+    opacity: 50%;
+}
+
+.title {
+    color: var(--color-second);
+    margin-top: 3%;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.studies {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
+    min-height: 40%;
+}
+
+.study1 {
+    background-color: black;
+    text-align: center;
+    padding: 6%;
+    border-right: 1px solid var(--color-first);
+    width: 33%;
+}
+
+.study2 {
+    background-color: black;
+    text-align: center;
+    padding:6%;
+    width: 33%;
+}
+
+.school {
+    color: white;
+    font-size: 150%;
+    padding-bottom: 5%;
+}
+
+.description-study {
+    color: var(--color-second);
+}
+
+.dates {
+    color: var(--color-first);
+    font-style: italic;
+    font-size: 0.8em;
+    padding-bottom: 5%;
+}
+
+.place {
+    color: var(--color-four);
+}
+
+.btn2 {
+    margin-top: 3%;
+    background-color:var(--color-first);
+    border-radius: 0.3em;
+    padding: 1%;
+    text-decoration: none;
+    font-size: 1em;  
+    transition: background-color 0.5s;
+    border: 1px solid var(--color-first);
+    min-width: 8em;
+    font-size: 0.8em;
+    margin-top: 7%;
+}
+
+.btn2 a {
+    color:white;
+}
+
+.btn2:hover{
+    background-color: black;
+    color: black;
+    border: 1px solid var(--color-first)
+}
+
+@media screen and (max-width: 465px) {
+    .studies {
+        margin-left: 5%;
+        margin-right: 5%;
+}
+}
+
+@media screen and (max-width: 465px) {
+
+    #image-central {
+        width: 7%;
+    }
+    .title{
+        font-size: 2.5em;
+        margin-top: 5%;
+    }
+
+    .studies {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 40%;
+    }
+
+    .study1 {
+        background-color: black;
+        text-align: center;
+        padding:6%;
+        border-right: 0px solid var(--color-first);
+        border-top: 1px solid var(--color-first);
+        width: 80%;
+    }
+    
+    .study2 {
+        background-color: black;
+        border-top: 1px solid var(--color-first);
+        text-align: center;
+        padding: 6%;
+        width: 80%;
+    }
+
+
+
+}

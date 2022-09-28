@@ -1,0 +1,130 @@
+.title {
+    font-size: 2.5rem;
+    font-weight: 50;
+    color: var(--color-second);
+    margin-top: 3%;
+    text-transform: uppercase;
+}
+
+#image-central {
+    width: 5%;
+    opacity: 40%;
+    margin-top: 1%;
+}
+
+.content-principal {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.content-principal div {
+    margin-bottom: 0.5%;
+}
+
+.form-contact {
+    margin: 1%;
+    padding:2%;
+    width: 60%;
+    background-color: rgb(63, 63, 63);
+    border-radius: 0.3em;
+}
+
+label {
+	display: inline-block;
+	width: 100%;
+	vertical-align: top;
+	text-align: left;
+}
+
+#name {
+    text-align: left;
+    border: 0px;
+    width: 100%;
+    height: 30px;
+    border-radius: 0.3em;
+    padding-left : 15px;
+    color: rgb(74, 74, 74);
+    font-size: 1em;
+}
+
+#name::placeholder {
+    color: rgb(74, 74, 74);
+}
+
+#email {
+    text-align: left;
+    padding-left : 15px;
+    color: rgb(74, 74, 74);
+    border: 0px;
+    width: 100%;
+    height: 30px;
+    border-radius: 0.3em;
+    font-size: 1em;
+}
+
+#email::placeholder {
+    color: rgb(74, 74, 74);
+}
+
+textarea {
+	width: 100%;
+	height: 10em;
+    color: grey;
+    text-align: left;
+    border: 0px;
+    margin-bottom: 1%;
+    border-radius: 0.3em;
+    padding-left : 15px;
+    color: rgb(74, 74, 74);
+    padding-top: 10px;
+    font-size: 1em;
+}
+
+textarea::placeholder {
+    color: rgb(74, 74, 74);
+}
+
+#btn-form {
+    background-color: var(--color-first);
+    display: inline-block;
+    border: 0px solid #cccccc;
+    min-width: 30%;
+    height: 40px;
+    cursor: pointer;
+    color: white;
+    border-radius: 0.3em;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#btn-form:hover {
+    background-color: black;
+}
+
+@media screen and (max-width: 768px) {
+
+    .form-contact {
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width: 465px) {
+
+    .title{
+        margin-top: 5%;
+        font-size: 2.5em;
+    }
+
+    #image-central {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        width: 10%;
+    }
+
+    .form-contact {
+        width: 80%;
+    }
+
+}

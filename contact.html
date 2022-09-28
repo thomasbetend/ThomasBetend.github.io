@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas Bétend</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="nav-bar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="logo-home">
+            <a href="./home.html"><img src="./logo-tb-05.png" alt="picto tb"></a>
+        </div>
+        <a href="#" id="icone-menu-b"><img src="./icons8-menu-arrondi-50.png" alt="icone menu"></a>
+    </nav>    
+    <menu class="menu-hide" id="menu-hide">           
+            <a href="#" id="icone-menu-h"><img src="./croix-blanche.png" alt="icone cross"></a>
+            <ul>
+                <li><a class="link-black" href="./home.html">Home</a></li>
+                <li><a class="link-black" href="./experiences.html">Expériences</a></li>
+                <li><a class="link-black" href="./stack.html">Stack technique</a></li>
+                <li><a class="link-black" href="./realisations.html">Réalisations</a></li>
+                <li><a class="link-black" href="./cursus.html">Cursus</a></li>
+                <li><a class="link-black" href="./contact.html">Contact</a></li>
+            </ul>
+    </menu>
+    <main>
+        <div class="title-principal">
+            <div class="title">Contact</div>
+            <img src="./icons8-mail-account-96.png" alt="enveloppes" id="image-central">
+        </div>
+        <div class="content-principal">
+            <form action="./index.html" method="post" class="form-contact">
+                <div>
+                    <label for="name"></label>
+                    <input type="text" name="user-name" id="name" placeholder="Votre nom">
+                </div>
+                <div>
+                    <label for="email"></label>
+                    <input type="email" name="user-email" id="email" placeholder="Votre mail">
+                </div>
+                <div>
+                    <div><label for="msg"></label></div>
+                    <div><textarea name="user-msg" id="msg" cols="30" rows="10" placeholder="Votre message"></textarea> </div>
+                </div>
+                <p>
+                    <button id="btn-form" type="submit">Envoyez votre Message</button>
+                </p>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="legend"><span>Thomas Bétend</span> // Développeur Web / Applications mobiles / Front End / Back End</div>
+        <div class="pictos-footer">
+            <div class="picto-social-footer2">
+                <a href="https://fr.linkedin.com/in/thomas-betend-31427518" target="_blank">
+                    <img src="./LinkedIn-Symbole2.png" alt="logo linkedin">
+                </a>
+            </div>
+            <div class="picto-social-footer2">
+                <a href="https://fr-fr.facebook.com/thomas.betend" target="_blank">
+                    <img src="./Facebook-Symbole2.png" alt="logo facebook">
+                </a>
+            </div>
+                <a href=""></a>
+            <div class="picto-social-footer2">
+                <a href="https://www.instagram.com/thomasbetend/?hl=fr" target="_blank">
+                    <img src="./Insta-Symbole2.png" alt="logo instagram">
+                </a>
+            <div>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<script src="menu.js"></script>

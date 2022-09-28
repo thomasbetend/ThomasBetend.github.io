@@ -1,0 +1,199 @@
+.title {
+    font-size: 2.5rem;
+    font-weight: 50;
+    color: var(--color-second);
+    margin-top: 3%;
+    margin-bottom: 1%;
+    text-transform: uppercase;
+}
+
+#image-central {
+    width: 4%;
+    margin-bottom: 1%;
+    opacity: 50%;
+}
+
+.link-black:hover {
+    color: black;
+}
+
+.content-principal {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    min-height: 300px;
+}
+
+.experience {
+    background-color: black;
+    margin: 1%;
+    text-align: center;
+    padding:3%;
+    width: 20%;
+    border: 1px solid var(--color-first);
+    border-radius: 0.5em;
+    transition: background-color 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 30%;
+    min-height: 50%;
+}
+
+/*.experience:hover {
+    background-color: var(--color-first);
+    color: black;
+    border: 1px solid var(--color-first)
+}*/
+
+.title-experience {
+    font-size: 1.4rem;
+    margin-bottom: 3%;
+    color: white;
+}
+
+.content-experience {
+    text-align: center;
+    list-style: none;
+    min-height: 25%;
+}
+
+.duration {
+    color: var(--color-second);
+    opacity: 50%;
+    font-size: 0.8em;
+    padding-bottom: 3%;
+}
+
+.langage {
+    text-transform: uppercase;
+    padding-bottom: 3%;
+    color: var(--color-second);
+}
+
+.device {
+    color: grey;
+    font-size: 0.9em;
+}
+
+.description {
+    color: grey;
+    opacity: 50%;
+    font-size: 0.6em;
+    font-style: italic;
+}
+
+.btn2 {
+    margin-top: 0%;
+    background-color:var(--color-first);
+    border-radius: 0.3em;
+    padding: 1%;
+    text-decoration: none;
+    font-size: 1em;  
+    transition: background-color 0.5s;
+    border: 1px solid var(--color-first);
+    min-width: 8em;
+    font-size: 0.8em;
+    margin-top: 7%;
+}
+
+.btn2 a {
+    color:white;
+}
+
+.btn2:hover{
+    background-color: black;
+    color: black;
+    border: 1px solid var(--color-first)
+}
+
+@media screen and (max-width: 768px) {
+
+    .title {
+        margin-top: 5%;
+        font-size: 3em;
+    }
+
+    #image-central {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        width: 10%;
+    }
+
+    .content-principal {
+        display: flex;
+        flex-direction: column;        
+        text-align: center;
+        align-items: center;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .experience {
+        background-color: black;
+        margin: 2%;
+        text-align: center;
+        padding: 6%;
+        width: 80%;
+        border: 1px solid var(--color-first);
+        transition: background-color 0.5s;
+    }
+
+    .title-experience {
+        margin-bottom: 1%;
+        font-size: 1.5em;
+    }
+
+    .btn2 {
+        min-width: 15em;
+        font-size: 1em;
+    }
+
+}
+
+@media screen and (max-width: 465px) {
+
+    .title {
+        margin-top: 5%;
+        font-size: 3em;
+    }
+
+    #image-central {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        width: 10%;
+    }
+
+    .content-principal {
+        display: flex;
+        flex-direction: column;        
+        text-align: center;
+        align-items: center;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .experience {
+        background-color: black;
+        margin: 2%;
+        text-align: center;
+        padding: 6%;
+        width: 80%;
+        border: 1px solid var(--color-first);
+        transition: background-color 0.5s;
+    }
+
+    .title-experience {
+        margin-bottom: 1%;
+        font-size: 1.5em;
+    }
+
+    .btn2 {
+        min-width: 15em;
+        font-size: 1em;
+    }
+
+}
+

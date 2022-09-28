@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+main a img{
+    max-width: 25%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.logo-principal {
+    opacity: 0%;
+    transition: opacity 5s ease-in-out;
+}
+
+.logo-appear {
+    opacity: 100%;
+}
+
+.btn-principal {
+    opacity: 0%;
+    transition: opacity 5s ease-in-out;
+    background-color: black;
+    border: 0px solid black;
+    color: white;
+    margin-top: 2%;
+}
+
+#btn-principal a {
+    color: white;
+}
+
+.btn-appear {
+    opacity: 100%;
+}
+
+
+@media screen and (max-width: 768px){
+    main a img{
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 465px){
+    main a img{
+        max-width: 50%;
+    }
+}
