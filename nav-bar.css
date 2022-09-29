@@ -23,7 +23,7 @@
 }
 
 .menu-laptop p {
-    margin: 5px;
+    margin-right: 25px;
 }
 
 .nav-bar img{
@@ -31,7 +31,7 @@
 }
 
 .button-home {
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
 .button-home a {
@@ -44,7 +44,7 @@
     width: 25px;
 }
 
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 821px) {
 
     #button-menu-burger {
         display: none;
