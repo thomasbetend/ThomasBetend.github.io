@@ -74,7 +74,7 @@ main {
 }
 
 #image-central {
-    width: 100%;
+    width: 80%;
 }
 
 
@@ -129,7 +129,7 @@ main {
 }
 
 .big-buttons {
-    display: none;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     min-height: 13em;
@@ -141,7 +141,6 @@ main {
 }
 
 .grey-line2 {
-    display: none;
     margin-top: 3%;
     border-top: 1px solid var(--color-four);
     width: 80%;
@@ -223,7 +222,7 @@ main {
 
     border: 1px solid var(--color-first)}
 
-@media screen and (min-width: 1450px) {
+/*@media screen and (min-width: 1450px) {
     #image-central {
         width: 800px;
         padding-right: 50px;
@@ -240,7 +239,7 @@ main {
     .title3 {
         font-size: 1.2em;
     }
-}
+} */
 
 
 @media screen and (max-width: 820px) {
