@@ -1,5 +1,5 @@
-var openBtn = document.getElementById('icone-menu-b');
-var closeBtn = document.getElementById('icone-menu-h');
+var openBtn = document.getElementById('button-menu-burger');
+var closeBtn = document.getElementById('button-menu-hide');
 var sideMenu = document.getElementById('menu-hide');
 
 openBtn.addEventListener("click", ()=>{

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thomas Bétend</title>
+    <title>Cursus</title>
     <link rel="stylesheet" href="cursus.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="menu.css">
@@ -13,71 +13,78 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="./logo-tb-01.png">
 </head>
 <body>
     <nav class="nav-bar">
-        <div class="logo-home">
-            <a href="./home.html"><img src="./logo-tb-05.png" alt="picto tb"></a>
+        <div class="button-home">
+            <a href="./home.html" type="button"><img src="./logo-tb-05.png" alt="picto tb"></a>
         </div>
-        <a href="#" id="icone-menu-b"><img src="./icons8-menu-arrondi-50.png" alt="icone menu"></a>
-    </nav>    
-    <menu class="menu-hide" id="menu-hide">           
-        <a href="#" id="icone-menu-h"><img src="./croix-blanche.png" alt="croix blanche"></a>
-        <ul>
-            <li><a class="link-black" href="./home.html">Home</a></li>
-            <li><a class="link-black" href="./experiences.html">Expériences</a></li>
-            <li><a class="link-black" href="./stack.html">Stack technique</a></li>
-            <li><a class="link-black" href="./realisations.html">Réalisations</a></li>
-            <li><a class="link-black" href="./cursus.html">Cursus</a></li>
-            <li><a class="link-black" href="./contact.html">Contact</a></li>
-        </ul>
-    </menu>
+        <div class="button-menu-burger">
+            <a href="#" id="button-menu-burger" type="button"><img src="./icons8-menu-arrondi-50.png" alt="icone menu"></a>
+        </div>
+        <div class="menu-laptop">
+            <a href="./experiences.html" class="link-black"><p>Expériences</p></a>
+            <a href="./stack.html" class="link-black"><p>Stack</p></a>
+            <a href="./realisations.html" class="link-black"><p>Réalisations</p></a>
+            <a href="./cursus.html" class="link-black"><p>Cursus</p></a>
+            <a href="./contact.html" class="link-black"><p>Contact</p></a>
+        </div>
+        <menu class="menu-hide" id="menu-hide">           
+            <a href="#" id="button-menu-hide"><img src="./croix-blanche.png" alt="croix blanche"></a>
+            <ul>
+                <li><a class="link-black" href="./home.html">Home</a></li>
+                <li><a class="link-black" href="./experiences.html">Expériences</a></li>
+                <li><a class="link-black" href="./stack.html">Stack</a></li>
+                <li><a class="link-black" href="./realisations.html">Réalisations</a></li>
+                <li><a class="link-black" href="./cursus.html">Cursus</a></li>
+                <li><a class="link-black" href="./contact.html">Contact</a></li>
+            </ul>
+        </menu>
+    </nav>
     <main>
         <div class="title-principal">
             <div class="title">Cursus</div>
             <img src="./icons8-learn-study-64.png" alt="picto study" id="image-central">
         </div> 
-        <div class="studies">
+        <div class="about-me">
+            <div class="about-me-title" #="about-me-title">
+                <a href="./about-me.html">A propos de moi</a>
+            </div>
+        </div>
+        <div class="study">
             <div class="study1">
-                <p class="school">ISAE-SUPAERO</p>
-                <p class="description-study">École d'ingénieur en Aéronautique</p>
-                <p class="dates">1998-2000</p>
-                <p class="place">Toulouse, France</p>
+                <p class="study-title">ISAE-SUPAERO</p>
+                <p class="study-description">École d'ingénieur <br/> en Aéronautique</p>
+                <p class="study-dates">1998-2000</p>
+                <p class="study-learning">Mécanique des fluides, Résistance des matériaux, Innovation, Gestion de projets</p>
+                <p class="study-place">Toulouse, France</p>
             </div>
             <div class="study1">
-                <p class="school">Émile Cohl</p>
-                <p class="description-study">École de Concepteur Illustrateur</p>
-                <p class="dates">2001-2005</p>
-                <p class="place">Lyon, France</p>
+                <p class="study-title">Émile Cohl</p>
+                <p class="study-description">École de Concepteur<br/>  Illustrateur</p>
+                <p class="study-dates">2001-2005</p>
+                <p class="study-learning">Dessin d'objet, Peinture, BD, Dessin Animé, Illustrations, Graphisme </p>
+                <p class="study-place">Lyon, France</p>
             </div>
             <div class="study2">
-                <p class="school">Donkey School</p>
-                <p class="description-study">École de Développeur Front End & Back End</p>
-                <p class="dates">2022</p>
-                <p class="place">Paris, France</p>
+                <p class="study-title">Donkey School</p>
+                <p class="study-description">École de Développeur<br/>  Full Stack</p>
+                <p class="study-dates">7 mois / 2022</p>
+                <p class="study-learning">HTML, CSS, JavaScript, PHP, Angular, Symfony, Github, WordPress, SEO, UX, UI</p>
+                <p class="study-place">Paris, France</p>
             </div>
         </div>
     </main>
     <footer>
-        <button class="btn2"><a href="./contact.html">Contactez-moi</a></button>
-        <div class="legend"><span>Thomas Bétend</span> // Développeur Web / Applications mobiles / Front End / Back End</div>
+        <button class="button-contact-footer"><a href="./contact.html">Contactez-moi</a></button>
+        <div class="legend-footer">// Thomas Bétend // <a href="tel:+33659220572">0659220572</a> // <br/>Développeur Web / Applications mobiles / Front End / Back End</div>
         <div class="pictos-footer">
             <div class="picto-social-footer2">
-                <a href="https://fr.linkedin.com/in/thomas-betend-31427518" target="_blank">
+                <a href="https://fr.linkedin.com/in/thomas-betend-31427518" target="_blank" type="button">
                     <img src="./LinkedIn-Symbole2.png" alt="logo linkedin">
                 </a>
             </div>
-            <div class="picto-social-footer2">
-                <a href="https://fr-fr.facebook.com/thomas.betend" target="_blank">
-                    <img src="./Facebook-Symbole2.png" alt="logo facebook">
-                </a>
-            </div>
-                <a href=""></a>
-            <div class="picto-social-footer2">
-                <a href="https://www.instagram.com/thomasbetend/?hl=fr" target="_blank">
-                    <img src="./Insta-Symbole2.png" alt="logo instagram">
-                </a>
-            <div>
         </div>
     </footer>
 

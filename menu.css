@@ -36,17 +36,17 @@
     width: 25px;
 }
 
-#icone-menu-h {
+#button-menu-hide {
     text-align: right;
     padding-top: 15px;
     padding-right: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
     .menu-hide{
-        width: 35%;
+        width: 40%;
         height: 100%;
-        font-size: 1.3em;
+        font-size: 1.8em;
         background:var(--color-third); 
     }
 

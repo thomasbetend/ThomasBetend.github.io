@@ -60,60 +60,46 @@
     min-height: 25%;
 }
 
-.duration {
+.experience-duration {
     color: var(--color-second);
     opacity: 50%;
     font-size: 0.8em;
     padding-bottom: 3%;
 }
 
-.langage {
+.experience-langage {
     text-transform: uppercase;
     padding-bottom: 3%;
     color: var(--color-second);
 }
 
-.device {
-    color: grey;
+.experience-support {
+    color: white;
+    opacity: 30%;
     font-size: 0.9em;
 }
 
-.description {
-    color: grey;
-    opacity: 50%;
-    font-size: 0.6em;
+.experience-description {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: white;
+    opacity: 30%;
+    font-size: 0.85em;
     font-style: italic;
 }
 
-.btn2 {
-    margin-top: 0%;
-    background-color:var(--color-first);
-    border-radius: 0.3em;
-    padding: 1%;
-    text-decoration: none;
-    font-size: 1em;  
-    transition: background-color 0.5s;
-    border: 1px solid var(--color-first);
-    min-width: 8em;
-    font-size: 0.8em;
-    margin-top: 7%;
+.experience-site a {
+    color: white;
+    opacity: 70%;
+    font-size: 0.85em;
+    text-decoration: underline;
 }
 
-.btn2 a {
-    color:white;
-}
-
-.btn2:hover{
-    background-color: black;
-    color: black;
-    border: 1px solid var(--color-first)
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
 
     .title {
         margin-top: 5%;
-        font-size: 3em;
+        font-size: 3.5em;
     }
 
     #image-central {
@@ -124,7 +110,7 @@
 
     .content-principal {
         display: flex;
-        flex-direction: column;        
+        flex-direction: column-reverse;        
         text-align: center;
         align-items: center;
         margin-left: 0%;
@@ -143,11 +129,22 @@
 
     .title-experience {
         margin-bottom: 1%;
+        font-size: 2.4em;
+    }
+
+    .experience-duration {
+        font-size: 1.2em;
+    }
+
+    .experience-langage {
         font-size: 1.5em;
     }
 
-    .btn2 {
-        min-width: 15em;
+    .experience-support {
+        font-size: 1.5em;
+    }
+
+    .experience-description {
         font-size: 1em;
     }
 
@@ -157,7 +154,28 @@
 
     .title {
         margin-top: 5%;
-        font-size: 3em;
+        font-size: 2.5em;
+    }
+
+    .title-experience {
+        margin-bottom: 2%;
+        font-size: 1.6em;
+    }
+
+    .experience-duration {
+        font-size: 0.9em;
+    }
+
+    .experience-langage {
+        font-size: 1.1em;
+    }
+
+    .experience-support {
+        font-size: 1em;
+    }
+
+    .experience-description {
+        font-size: 0.9em;
     }
 
     #image-central {
@@ -183,16 +201,6 @@
         width: 80%;
         border: 1px solid var(--color-first);
         transition: background-color 0.5s;
-    }
-
-    .title-experience {
-        margin-bottom: 1%;
-        font-size: 1.5em;
-    }
-
-    .btn2 {
-        min-width: 15em;
-        font-size: 1em;
     }
 
 }

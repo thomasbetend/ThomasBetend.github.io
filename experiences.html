@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thomas Bétend</title>
+    <title>Expériences</title>
     <link rel="stylesheet" href="experiences.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="menu.css">
@@ -13,25 +13,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="./logo-tb-01.png">
 </head>
 <body>
     <nav class="nav-bar">
-        <div class="logo-home">
-            <a href="./home.html"><img src="./logo-tb-05.png" alt="picto tb"></a>
+        <div class="button-home">
+            <a href="./home.html" type="button"><img src="./logo-tb-05.png" alt="picto tb"></a>
         </div>
-        <a href="#" id="icone-menu-b"><img src="./icons8-menu-arrondi-50.png" alt="icone menu"></a>
+        <div class="button-menu-burger">
+            <a href="#" id="button-menu-burger" type="button"><img src="./icons8-menu-arrondi-50.png" alt="icone menu"></a>
+        </div>
+        <div class="menu-laptop">
+            <a href="./experiences.html" class="link-black"><p>Expériences</p></a>
+            <a href="./stack.html" class="link-black"><p>Stack</p></a>
+            <a href="./realisations.html" class="link-black"><p>Réalisations</p></a>
+            <a href="./cursus.html" class="link-black"><p>Cursus</p></a>
+            <a href="./contact.html" class="link-black"><p>Contact</p></a>
+        </div>
+        <menu class="menu-hide" id="menu-hide">           
+            <a href="#" id="button-menu-hide"><img src="./croix-blanche.png" alt="croix blanche"></a>
+            <ul>
+                <li><a class="link-black" href="./home.html">Home</a></li>
+                <li><a class="link-black" href="./experiences.html">Expériences</a></li>
+                <li><a class="link-black" href="./stack.html">Stack</a></li>
+                <li><a class="link-black" href="./realisations.html">Réalisations</a></li>
+                <li><a class="link-black" href="./cursus.html">Cursus</a></li>
+                <li><a class="link-black" href="./contact.html">Contact</a></li>
+            </ul>
+        </menu>
     </nav>    
-    <menu class="menu-hide" id="menu-hide">           
-        <a href="#" id="icone-menu-h"><img src="./croix-blanche.png" alt="croix blanche"></a>
-        <ul>
-            <li><a class="link-black" href="./home.html">Home</a></li>
-            <li><a class="link-black" href="./experiences.html">Expériences</a></li>
-            <li><a class="link-black" href="./stack.html">Stack technique</a></li>
-            <li><a class="link-black" href="./realisations.html">Réalisations</a></li>
-            <li><a class="link-black" href="./cursus.html">Cursus</a></li>
-            <li><a class="link-black" href="./contact.html">Contact</a></li>
-        </ul>
-    </menu>
     <main>
         <div class="title-principal">
             <div class="title">Expériences</div>
@@ -40,59 +50,51 @@
         <div class="content-principal">
             <div class="experience">
                 <div class="title-experience">
+                    Développeur Web</br>Au Salon de Danse<span></span> 
+                </div>
+                <div class="content-experience">
+                    <p class="experience-duration">octobre 2022</p>
+                    <p class="experience-langage">HTML / CSS / JS / WordPress </p>
+                    <p class="experience-support">Web</p>
+                    <p class="experience-description">Création du site internet de l'École de danse parisienne. <br/> Travail en équipe. <br/>Contact avec la cliente puis création d'un site WordPress avec injection de CSS, JS, PHP</p>
+                    <p class="experience-site"><a href="https://v2.ausalondedanse.fr/" target="_blank">ausalondedanse.fr</a></p>
+                </div>
+            </div>
+            <div class="experience">
+                <div class="title-experience">
                     Graphiste </br><span>JCDecaux</span>
                 </div>
                 <div class="content-experience">
-                    <p class="duration">2005 - Aujourd'hui</p>
-                    <p class="langage">Suite Adobe <br/> Indesign / Photoshop / Illustrator</p>
-                    <p class="device">Print</p>
-                    <p class="description">Flyers, Illustrations, Affiches</p>
+                    <p class="experience-duration">2005 - Aujourd'hui</p>
+                    <p class="experience-langage">Suite Adobe <br/> Indesign / Photoshop / Illustrator</p>
+                    <p class="experience-support">Print</p>
+                    <p class="experience-description">Flyers, Illustrations, Affiches. Communication graphique des systèmes de Vélos en Libre-Service.</p>
                 </div>
             </div>
             <div class="experience">
                 <div class="title-experience">
-                    Directeur </br><span>Artistique</span> 
+                    Développeur Web</br><span>Improactif</span> 
                 </div>
                 <div class="content-experience">
-                    <p class="duration">2019 - 2022</p>
-                    <p class="langage">Wordpress / Suite Adobe</p>
-                    <p class="device">Web / Print</p>
-                    <p class="description">Site internet, Brochures, Flyers</p>
-                </div>
-            </div>
-            <div class="experience">
-                <div class="title-experience">
-                    Stage </br><span>Entreprise</span> 
-                </div>
-                <div class="content-experience">
-                    <p class="duration">3 mois - 2022</p>
-                    <p class="langage">HTML / CSS / JS / ANGULAR / PHP / SYMFONY</p>
-                    <p class="device">Web</p>
-                    <p class="description">Sites, Applis</p>
+                    <p class="experience-duration">2019 - 2022</p>
+                    <p class="experience-langage">WordPress / Suite Adobe</p>
+                    <p class="experience-support">Web / Print</p>
+                    <p class="experience-description">Création du site de l'entreprise, Brochures, Flyers pour la communication auprès des collectivités</p>
+                    <p class="experience-site"><a href="https://www.improactif.com/" target="_blank">improactif.com</a></p>
+                    </p>
                 </div>
             </div>
         </div>
     </main>
     <footer>
-        <button class="btn2"><a href="./contact.html">Contactez-moi</a></button>
-        <div class="legend"><span>Thomas Bétend</span> // Développeur Web / Applications mobiles / Front End / Back End</div>
+        <button class="button-contact-footer"><a href="./contact.html">Contactez-moi</a></button>
+        <div class="legend-footer">// Thomas Bétend // <a href="tel:+33659220572">0659220572</a> // <br/>Développeur Web / Applications mobiles / Front End / Back End</div>
         <div class="pictos-footer">
             <div class="picto-social-footer2">
-                <a href="https://fr.linkedin.com/in/thomas-betend-31427518" target="_blank">
+                <a href="https://fr.linkedin.com/in/thomas-betend-31427518" target="_blank" type="button">
                     <img src="./LinkedIn-Symbole2.png" alt="logo linkedin">
                 </a>
             </div>
-            <div class="picto-social-footer2">
-                <a href="https://fr-fr.facebook.com/thomas.betend" target="_blank">
-                    <img src="./Facebook-Symbole2.png" alt="logo facebook">
-                </a>
-            </div>
-                <a href=""></a>
-            <div class="picto-social-footer2">
-                <a href="https://www.instagram.com/thomasbetend/?hl=fr" target="_blank">
-                    <img src="./Insta-Symbole2.png" alt="logo instagram">
-                </a>
-            <div>
         </div>
     </footer>
 </body>

@@ -42,33 +42,18 @@
             </ul>
         </menu>
     </nav>
-    <main>
-        <div class="title-principal">
-            <div class="title">Contact</div>
-            <img src="./icons8-mail-account-96.png" alt="enveloppes" id="image-central">
-        </div>
-        <div class="content-principal">
-            <form action="./validation-contact.php" method="post" class="form-contact">
-                <div>
-                    <label for="name"></label>
-                    <input type="text" name="user-name" id="name" placeholder="Votre nom">
-                </div>
-                <div>
-                    <label for="email"></label>
-                    <input type="email" name="user-email" id="email" placeholder="Votre mail">
-                </div>
-                <div>
-                    <div><label for="msg"></label></div>
-                    <div><textarea name="user-msg" id="msg" cols="30" rows="10" placeholder="Votre message"></textarea> </div>
-                </div>
-                <p>
-                    <button id="button-form" type="submit">Envoyez votre Message</button>
-                </p>
-            </form>
-        </div>
+    <main> 
+        <?php 
+        $name = $_POST['email'];
+        $email = $_POST['name'];
+        if ((!isset($name) || empty($name)) || (!isset($email) || !filter_var($email, FILTER_VALIDATE_EMAIL))): ?>
+        <div> Pour envoyer un message, il nous faut une adresse mail valide </div>
+        <?php else: ?>
+        <div> Merci pour votre message <?php echo ($name); ?>, nous vous recontacterons très vite.</div>
+
     </main>
     <footer>
-        <div class="legend-footer">// Thomas Bétend // <a href="tel:+33659220572">0659220572</a> // <br/>Développeur Web / Applications mobiles / Front End / Back End</div>
+        <div class="legend-footer">// Thomas Bétend // <br/>Développeur Web / Applications mobiles / Front End / Back End</div>
         <div class="pictos-footer">
             <div class="picto-social-footer2">
                 <a href="https://fr.linkedin.com/in/thomas-betend-31427518" target="_blank" type="button">
@@ -80,5 +65,3 @@
 </body>
 
 </html>
-
-<script src="menu.js"></script>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thomas Bétend</title>
+    <title>stack</title>
     <link rel="stylesheet" href="stack.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="menu.css">
@@ -13,20 +13,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="./logo-tb-01.png">
 </head>
 <body>
     <nav class="nav-bar">
-        <div class="logo-home">
-            <a href="./home.html"><img src="./logo-tb-05.png" alt="picto tb"></a>
+        <div class="button-home">
+            <a href="./home.html" type="button"><img src="./logo-tb-05.png" alt="picto tb"></a>
         </div>
-        <a href="#" id="icone-menu-b"><img src="./icons8-menu-arrondi-50.png" alt="icone menu"></a>
+        <div class="button-menu-burger">
+            <a href="#" id="button-menu-burger" type="button"><img src="./icons8-menu-arrondi-50.png" alt="icone menu"></a>
+        </div>
+        <div class="menu-laptop">
+            <a href="./experiences.html" class="link-black"><p>Expériences</p></a>
+            <a href="./stack.html" class="link-black"><p>Stack</p></a>
+            <a href="./realisations.html" class="link-black"><p>Réalisations</p></a>
+            <a href="./cursus.html" class="link-black"><p>Cursus</p></a>
+            <a href="./contact.html" class="link-black"><p>Contact</p></a>
+        </div>
+        <menu class="menu-hide" id="menu-hide">           
+            <a href="#" id="button-menu-hide"><img src="./croix-blanche.png" alt="croix blanche"></a>
+            <ul>
+                <li><a class="link-black" href="./home.html">Home</a></li>
+                <li><a class="link-black" href="./experiences.html">Expériences</a></li>
+                <li><a class="link-black" href="./stack.html">Stack</a></li>
+                <li><a class="link-black" href="./realisations.html">Réalisations</a></li>
+                <li><a class="link-black" href="./cursus.html">Cursus</a></li>
+                <li><a class="link-black" href="./contact.html">Contact</a></li>
+            </ul>
+        </menu>
     </nav>    
     <menu class="menu-hide" id="menu-hide">           
-        <a href="#" id="icone-menu-h"><img src="./croix-blanche.png" alt="croix blanche"></a>
+        <a href="#" id="button-menu-hide"><img src="./croix-blanche.png" alt="croix blanche"></a>
         <ul>
             <li><a class="link-black" href="./home.html">Home</a></li>
             <li><a class="link-black" href="./experiences.html">Expériences</a></li>
-            <li><a class="link-black" href="./stack.html">Stack technique</a></li>
+            <li><a class="link-black" href="./stack.html">Stack</a></li>
             <li><a class="link-black" href="./realisations.html">Réalisations</a></li>
             <li><a class="link-black" href="./cursus.html">Cursus</a></li>
             <li><a class="link-black" href="./contact.html">Contact</a></li>
@@ -34,54 +55,68 @@
     </menu>
     <main>
         <div class="title-principal">
-            <div class="title">Stack technique</div>
+            <div class="title">Stack</div>
             <img src="./icons8-blockchain-technology-50.png" alt="illustration cube" id="image-central">
         </div>
         <div class="content-principal">
-            <div class="framework">
-                <div class="title-framework">
+            <div class="stack-used">
+                <div class="title-stack-used">
                     Angular
                 </div>
-                <div class="content-framework">
+                <div class="content-stack-used">
                     <p>Framework JavaScript</p>
                 </div>
-                <div class="picto-framework1">
-                    <img src="./logo-angular.png" alt="picto angular">
+                <div class="picto-stack-used1">
+                    <img src="./angular-icon-1.svg" alt="picto angular">
                 </div>
             </div>
-            <div class="framework">
-                <div class="title-framework">
+            <div class="stack-used">
+                <div class="title-stack-used">
                     Symfony
                 </div>
-                <div class="content-framework">
+                <div class="content-stack-used">
                     <p>Framework PHP</p>
                 </div>
-                <div class="picto-framework2">
-                    <img src="./symfony_white_03-1.png" alt="picto symfony">
+                <div class="picto-stack-used1">
+                    <img src="./symfony.svg" alt="picto symfony">
+                </div>
+            </div>
+            <div class="stack-used">
+                <div class="title-stack-used">
+                        Autres
+                </div>
+                <div class="stack-used2">
+                    <div class="picto-stack-used3">
+                        <img src="./github-icon.svg" id="picto-github" alt="picto github">
+                    </div>
+                    <div class="picto-stack-used3">
+                        <img src="./wordpress-blue.svg" alt="picto wordpress">
+                    </div>
+                    <div class="picto-stack-used3">
+                        <img src="./logo-javascript.svg" alt="picto javascript">
+                    </div>
+                    <div class="picto-stack-used3">
+                        <img src="./php-1.svg" alt="picto javascript">
+                    </div>
+                    <div class="picto-stack-used3">
+                        <img src="./python-5.svg" alt="picto javascript">
+                    </div>
+                    <div class="picto-stack-used3">
+                        <img src="./mysql.svg" alt="picto javascript">
+                    </div>
                 </div>
             </div>
         </div>
     </main>
-    <footer>
-        <button class="btn2"><a href="./contact.html">Contactez-moi</a></button>
-        <div class="legend"><span>Thomas Bétend</span> // Développeur Web / Applications mobiles / Front End / Back End</div>
+     <footer>
+        <button class="button-contact-footer"><a href="./contact.html">Contactez-moi</a></button>
+        <div class="legend-footer">// Thomas Bétend // <a href="tel:+33659220572">0659220572</a> // <br/>Développeur Web / Applications mobiles / Front End / Back End</div>
         <div class="pictos-footer">
             <div class="picto-social-footer2">
-                <a href="https://fr.linkedin.com/in/thomas-betend-31427518" target="_blank">
+                <a href="https://fr.linkedin.com/in/thomas-betend-31427518" target="_blank" type="button">
                     <img src="./LinkedIn-Symbole2.png" alt="logo linkedin">
                 </a>
             </div>
-            <div class="picto-social-footer2">
-                <a href="https://fr-fr.facebook.com/thomas.betend" target="_blank">
-                    <img src="./Facebook-Symbole2.png" alt="logo facebook">
-                </a>
-            </div>
-                <a href=""></a>
-            <div class="picto-social-footer2">
-                <a href="https://www.instagram.com/thomasbetend/?hl=fr" target="_blank">
-                    <img src="./Insta-Symbole2.png" alt="logo instagram">
-                </a>
-            <div>
         </div>
     </footer>
 </body>

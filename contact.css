@@ -24,7 +24,7 @@
 
 .form-contact {
     margin: 1%;
-    padding:2%;
+    padding: 2%;
     width: 60%;
     background-color: rgb(63, 63, 63);
     border-radius: 0.3em;
@@ -85,9 +85,8 @@ textarea::placeholder {
     color: rgb(74, 74, 74);
 }
 
-#btn-form {
+#button-form {
     background-color: var(--color-first);
-    display: inline-block;
     border: 0px solid #cccccc;
     min-width: 30%;
     height: 40px;
@@ -98,14 +97,40 @@ textarea::placeholder {
     padding-right: 5%;
 }
 
-#btn-form:hover {
+#button-form:hover {
     background-color: black;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
+
+    .title {
+        margin-top: 5%;
+        font-size: 3.5em;
+    }
+
+    #image-central {
+        width: 8%;
+    }
 
     .form-contact {
-        width: 70%;
+        width: 85%;
+    }
+
+    textarea {
+        height: 400px;
+    }
+
+    #button-form {
+        font-size: 1.4em;
+        margin: 4%;
+    }
+
+    #name {
+        height: 40px;
+    }
+
+    #email {
+        height: 40px;
     }
 
 }
@@ -125,6 +150,15 @@ textarea::placeholder {
 
     .form-contact {
         width: 80%;
+    }
+
+    textarea {
+        height: 200px;
+    }
+
+    #button-form {
+        font-size: 1em;
+        margin: 3%;
     }
 
 }

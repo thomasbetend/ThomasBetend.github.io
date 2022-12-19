@@ -1,5 +1,6 @@
-body {
-    background-image: "./stack_technique.png";
+main {
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .title {
@@ -24,82 +25,69 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
 }
 
-.framework {
-    background-color: black;
+.stack-used {
     margin: 1%;
     text-align: center;
-    padding:3%;
+    padding: 3%;
     width: 40%;
     border: 1px solid var(--color-first);
     border-radius: 0.5em;
-    transition: background-color 0.5s;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
-/* .framework:hover{
+.stack-used2 {
+    margin: 1%;
+    text-align: center;
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .stack-used:hover{
     background-color: var(--color-first);
     color: black;
     border: 1px solid var(--color-first)
 } */
 
-.title-framework {
+.title-stack-used {
     text-transform: uppercase;
     font-size: 1.8rem;
     margin-bottom: 2%;
     color: white;
 }
 
-.content-framework {
+.content-stack-used {
     text-align: center;
     list-style: none;
     color: var(--color-second);
 }
 
-.picto-framework1 img {
-    max-width: 110px;
-    margin-top: 5%;
+.picto-stack-used1 img {
+    max-width: 90px;
+    margin-top: 18px;
 }
 
-.picto-framework2 img {
-    max-width: 110px;
-    margin-top: 8%;
+.picto-stack-used3 img {
+    width: 40px;
+    margin: 9px;
 }
 
-.btn2 {
-    margin-top: 0%;
-    background-color:var(--color-first);
-    border-radius: 0.3em;
-    padding: 1%;
-    text-decoration: none;
-    font-size: 1em;  
-    transition: background-color 0.5s;
-    border: 1px solid var(--color-first);
-    min-width: 8em;
-    font-size: 0.8em;
-    margin-top: 7%;
+#picto-github {
+    fill: white;
 }
 
-.btn2 a {
-    color:white;
-}
-
-.btn2:hover{
-    background-color: black;
-    color: black;
-    border: 1px solid var(--color-first)
-}
-
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
 
     .title {
         margin-top: 5%;
-        font-size: 2.5em;
+        font-size: 3.5em;
     }
 
     #image-central {
@@ -117,28 +105,32 @@ body {
         align-items: center;
     }
 
-    .btn2 {
-        min-width: 11em;
-    }
-
-    .framework {
+    .stack-used {
         background-color: black;
         margin: 2%;
         text-align: center;
         padding:3%;
-        width: 80%;
+        width: 90%;
         border: 1px solid var(--color-first);
         transition: background-color 0.5s;
     }
 
-    .title-framework {
+    .title-stack-used {
         margin-bottom: 1%;
         margin-top: 5%;
+        font-size: 2.4em;
     }
 
-    .btn2 {
-        min-width: 15em;
-        font-size: 1em;
+    .content-stack-used {
+        font-size: 1.5em;
+    }
+
+    .picto-stack-used1 img {
+        margin: 12px;
+    }
+
+    .picto-stack-used3 img {
+        width: 50px;
     }
 }
 
@@ -166,41 +158,44 @@ body {
         margin-right: 0%;
     }
 
-    .framework {
+    .stack-used {
         background-color: black;
         margin: 2%;
         text-align: center;
         padding:3%;
-        width: 80%;
+        width: 100%;
         border: 1px solid var(--color-first);
         transition: background-color 0.5s;
     }
 
-    .title-framework {
+    .stack-used2 {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .title-stack-used {
         margin-bottom: 1%;
         margin-top: 4%;
     }
 
-    .legend {
-        font-size: 0.7em;
-        padding: 3%;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    .picto-framework1 img {
+    .picto-stack-used1 img {
         max-width: 70px;
         margin-top: 5%;
     }
-    
-    .picto-framework2 img {
-        max-width: 70px;
-        margin-top: 6%;
+
+    .picto-stack-used3 img {
+        max-width: 40px;
+        margin-top: 5%;
     }
 
-    .btn2 {
-        min-width: 15em;
-        font-size: 1em;
+    .title-stack-used {
+        font-size: 1.6rem;
+        margin-bottom: 1.5%;
     }
+    
+    .content-stack-used {
+        font-size: 1.1em;
+    }
+
 }
 

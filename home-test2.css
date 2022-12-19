@@ -38,6 +38,12 @@
     }
 }
 */
+.total{
+  animation: circle 3s forwards;
+  clip-path: circle(20%);
+}
+
+
 
 main {
     display: flex;
