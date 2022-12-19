@@ -1,0 +1,424 @@
+/* Exemple de curseur
+.cursor {
+    width: 30px;
+    height: 30px;
+    border: 1px dashed white;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.cursor::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 5px;
+    height: 5px;
+    background: var(--color-second);
+    border-radius: 50%;
+    border: 0px;
+}
+
+.expand{
+    animation: Anim1 0.5s;
+    background: var(--color-first);
+    border: 1px solid var(--color-first);
+}
+
+@keyframes Anim1 {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+*/
+.total{
+  animation: circle 3s forwards;
+  clip-path: circle(20%);
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.presentation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+    width: 100vw;
+    align-items: left;
+    margin-top: 40px;
+}
+
+.personal-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    padding-left: 10%;
+    margin-top: 3%;
+    width: 70%;
+}
+
+.image-central {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#image-central {
+    width: 80%;
+}
+
+
+.title {
+    font-size: 2.5rem;
+    color: white;
+    margin-top: 6%;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: O.8em;
+}
+
+.title3 {
+    text-transform: uppercase;
+    color: var(--color-second);
+    font-size: 1.1rem;
+    line-height: 1.4em;
+    margin-bottom: 1%;
+    text-align: left;
+}
+
+.title2 {
+    text-transform: uppercase;
+    font-size: 1.4em;
+    color: var(--color-second);
+    margin-bottom: 1%;
+    text-align: left;
+}
+
+.grey-line1 {
+    border-top: 1px solid var(--color-four);
+    height: 1px;
+    width: 50%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.title4 {
+    color: white;
+    margin-bottom: 1%;
+    text-align: left;
+}
+
+.title5 {
+    color: white;
+    opacity: 30%;
+    text-transform: capitalize;
+    opacity: 50%;
+    font-size: 0.8em;
+    margin-bottom: 3%;
+    text-align: left;
+}
+
+.big-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 13em;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    padding-left: 8%;
+    padding-right: 8%;
+    width: 100vw;
+}
+
+.grey-line2 {
+    margin-top: 3%;
+    border-top: 1px solid var(--color-four);
+    width: 80%;
+    height: 1px;
+}
+
+.pave {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-four);
+    min-width: 20%;
+    border-radius: 0.3em;
+    margin: 2%;
+}
+
+.title-pave {
+    color: white;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.pave img {
+    width: 2em;
+    opacity: 40%;
+    margin-bottom: 5px;
+}
+
+/* .pave a {
+    width: 100%;
+    height: 100%;;
+} */
+
+.button-pave {
+    min-width: 8em;
+    min-height: 2em;
+    border: 1px solid var(--color-first);
+    background-color: var(--color-first);    
+    border-radius: 0.3em;
+    padding: 1%;
+    text-decoration: none;
+    color: white;
+    font-size: 0.8em;  
+    cursor: pointer;
+    transition: background-color 0.5s;
+    margin-top: 8px;
+}
+
+.button-pave:hover{
+    background-color: var(--color-four);
+    color: white;
+    border: 1px solid var(--color-first)}
+
+.button-pave a {
+    color: white;
+}
+
+.button-contact {
+    margin: 1%;
+    min-width: 15em;
+    min-height: 2.5em;
+    border: 1px solid var(--color-first);
+    background-color: var(--color-first);    
+    border-radius: 0.3em;
+    padding: 1%;
+    text-decoration: none;
+    font-size: 1em;  
+    transition: background-color 0.5s;
+}
+
+.button-contact a {
+    color:white;
+}
+
+.button-contact:hover{
+    background-color: black;
+
+    border: 1px solid var(--color-first)}
+
+/*@media screen and (min-width: 1450px) {
+    #image-central {
+        width: 800px;
+        padding-right: 50px;
+    }
+
+    .title {
+        font-size: 4.5em;
+    }
+
+    .title2 {
+        font-size: 2.3em;
+    }
+
+    .title3 {
+        font-size: 1.2em;
+    }
+} */
+
+
+@media screen and (max-width: 820px) {
+
+    .presentation {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .personal-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0%;
+        width: 100%;
+    }
+
+    .title {
+        font-size: 4em;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: center;
+    }
+
+    .title2 {
+        margin-top: 3%;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 2em;
+    }
+
+    .title3 {
+        font-size: 1.4em;
+        line-height: 0.2em;
+        margin-top: 1%;
+    }
+
+    .grey-line1 {
+        margin-top: 4%;
+        width: 40%;
+    }
+
+    .title4 {
+        font-size: 1.4em;
+    }
+
+    .title5 {
+        font-size: 1.2em;
+    }
+
+    .button-contact {
+        min-width: 12em;
+        margin-top: 3%;
+        font-size: 1.5em;
+    }
+
+    #image-central {
+        margin-top: 5%;
+        margin-bottom: 0%;
+        width: 50%;
+    }
+
+    .big-buttons {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: black;
+        min-height: 15em;
+        margin-bottom: 3%;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    
+    .pave {
+        min-width: 40%;
+        height: 200px;
+    }
+    
+    .title-pave {
+        font-size: 1.8em;
+        text-transform: uppercase;
+    }
+    
+    .pave-image img {
+        width: 1.9em;
+    }
+
+    .button-pave {
+        min-width: 9em;
+        min-height: 2.3em;  
+        font-size: 1.2em;  
+    }
+
+    .grey-line2 {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 465px) {
+
+    .title {
+        font-size: 3em;
+    }
+
+    .title2 {
+        font-size: 1.4em;
+    }
+
+    .title3 {
+        font-size: 0.8em;
+        margin-top: 2%;
+    }
+
+    .grey-line1 {
+        width: 20%;
+        height: 2px;
+        border-top: 2px solid var(--color-four);
+    }
+
+    .title4 {
+        font-size: 1.1em;
+    }
+
+    .title5 {
+        font-size: 0.9em;
+    }
+
+    .button-contact {
+        font-size: 1.1em;
+        height: 1.6em;
+    }
+
+    .big-buttons {
+        display: column;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pave {
+        background-color: var(--color-four);
+        width: 80%;
+        height: 150px;
+    }
+    
+    .title-pave {
+        color: white;
+        font-size: 1.3em;
+        text-transform: uppercase;
+    }
+    
+    .pave-image img {
+        width: 0.8em;
+        margin-bottom: 0;
+    }
+    
+    .button-pave {
+        min-width: 9em;
+        min-height: 2em;  
+        font-size: 1em;
+        margin-bottom: 10%;  
+        margin-top: 0px;
+    }
+
+    #image-central {
+        width: 80%;
+    }
+
+    .pave-image img {
+        width: 40px;
+    }
+}

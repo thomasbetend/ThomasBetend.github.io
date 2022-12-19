@@ -80,10 +80,19 @@
 }
 
 .experience-description {
+    padding-top: 2%;
+    padding-bottom: 2%;
     color: white;
     opacity: 30%;
-    font-size: 0.7em;
+    font-size: 0.85em;
     font-style: italic;
+}
+
+.experience-site a {
+    color: white;
+    opacity: 70%;
+    font-size: 0.85em;
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 820px) {
@@ -150,7 +159,7 @@
 
     .title-experience {
         margin-bottom: 2%;
-        font-size: 1.8em;
+        font-size: 1.6em;
     }
 
     .experience-duration {

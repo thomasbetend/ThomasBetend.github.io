@@ -31,6 +31,11 @@
     opacity: 30%;
 }
 
+.legend-footer a {
+    text-decoration: none;
+    color: white;
+}
+
 .pictos-footer {
     display: flex;
     justify-content: center;
