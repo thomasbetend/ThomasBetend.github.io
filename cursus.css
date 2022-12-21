@@ -19,7 +19,7 @@
 
 .study {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: center;
     margin-left: 10%;
     margin-right: 10%;
