@@ -1,84 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="contact.css">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="menu.css">
-    <link rel="stylesheet" href="nav-bar.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
-    <link rel="icon" type="image/x-icon" href="./logo-tb-01.png">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About</title>
+        <link rel="stylesheet" href="message-validation.css">
+        <link rel="stylesheet" href="menu.css">
+        <link rel="stylesheet" href="nav-bar.css">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+        <link rel="icon" type="image/x-icon" href="./logo-tb-01.png">
+    </head>
 </head>
 <body>
-    <nav class="nav-bar">
-        <div class="button-home">
-            <a href="./home.html" type="button"><img src="./logo-tb-05.png" alt="picto tb"></a>
-        </div>
-        <div class="button-menu-burger">
-            <a href="#" id="button-menu-burger" type="button"><img src="./icons8-menu-arrondi-50.png" alt="icone menu"></a>
-        </div>
-        <div class="menu-laptop">
-            <a href="./experiences.html" class="link-black"><p>Expériences</p></a>
-            <a href="./stack.html" class="link-black"><p>Stack</p></a>
-            <a href="./realisations.html" class="link-black"><p>Réalisations</p></a>
-            <a href="./cursus.html" class="link-black"><p>Cursus</p></a>
-            <a href="./contact.html" class="link-black"><p>Contact</p></a>
-        </div>
-        <menu class="menu-hide" id="menu-hide">           
-            <a href="#" id="button-menu-hide"><img src="./croix-blanche.png" alt="croix blanche"></a>
-            <ul>
-                <li><a class="link-black" href="./home.html">Home</a></li>
-                <li><a class="link-black" href="./experiences.html">Expériences</a></li>
-                <li><a class="link-black" href="./stack.html">Stack</a></li>
-                <li><a class="link-black" href="./realisations.html">Réalisations</a></li>
-                <li><a class="link-black" href="./cursus.html">Cursus</a></li>
-                <li><a class="link-black" href="./contact.html">Contact</a></li>
-            </ul>
-        </menu>
-    </nav>
     <main>
         <div class="title-principal">
             <div class="title">Contact</div>
             <img src="./icons8-mail-account-96.png" alt="enveloppes" id="image-central">
         </div>
-        <div class="content-principal">
-            <form action="home.html" method="post" class="form-contact">
-                <div>
-                    <label for="name"></label>
-                    <input type="text" name="user-name" id="name" placeholder="Votre nom">
-                </div>
-                <div>
-                    <label for="email"></label>
-                    <input type="email" name="user-email" id="email" placeholder="Votre mail">
-                </div>
-                <div>
-                    <div><label for="msg"></label></div>
-                    <div><textarea name="user-msg" id="msg" cols="30" rows="10" placeholder="Votre message"></textarea> </div>
-                </div>
-                <p>
-                    <button id="button-form" type="submit">Envoyez votre Message</button>
-                </p>
-            </form>
+        <div class="about-me-text">
+            Si vous voulez plus d'informations, <br><br>
+            vous pouvez m'envoyer un mail <a href="mailto:thomas.betend@yahoo.fr">thomas.betend@yahoo.fr</a> <br>
+            ou m'appeler <a href="tel:+33659220572">0659220572</a>
         </div>
+        <button class="button-back">
+            <a href="./home.html">Accueil</a>
+        </button>
     </main>
-    <footer>
-        <div class="legend-footer">// Thomas Bétend // <a href="tel:+33659220572">0659220572</a> // <br/>Développeur Web / Applications mobiles / Front End / Back End</div>
-        <div class="pictos-footer">
-            <div class="picto-social-footer2">
-                <a href="https://fr.linkedin.com/in/thomas-betend-31427518" target="_blank" type="button">
-                    <img src="./LinkedIn-Symbole2.png" alt="logo linkedin">
-                </a>
-            </div>
-        </div>
-    </footer>
 </body>
-
 </html>
-
-<script src="menu.js"></script>
