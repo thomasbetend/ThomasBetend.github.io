@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expériences</title>
-    <link rel="stylesheet" href="experiences.css">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="nav-bar.css">
@@ -41,53 +41,33 @@
                 <li><a class="link-black" href="./contact.html">Contact</a></li>
             </ul>
         </menu>
-    </nav>    
+    </nav>
     <main>
         <div class="title-principal">
-            <div class="title">Expériences</div>
-            <img src="./icons8-intelligence-100.png" alt="illustration technologique" id="image-central">
+            <div class="title">Contact</div>
+            <img src="./icons8-mail-account-96.png" alt="enveloppes" id="image-central">
         </div>
         <div class="content-principal">
-            <div class="experience">
-                <div class="title-experience">
-                    Développeur Web</br>Au Salon de Danse<span></span> 
+            <form action="message-validation.html" method="post" class="form-contact">
+                <div>
+                    <label for="name"></label>
+                    <input type="text" name="user-name" id="name" placeholder="Votre nom">
                 </div>
-                <div class="content-experience">
-                    <p class="experience-duration">octobre 2022</p>
-                    <p class="experience-langage">HTML / CSS / JS / WordPress </p>
-                    <p class="experience-support">Web</p>
-                    <p class="experience-description">Création du site internet de l'École de danse parisienne. <br/> Travail en équipe. <br/>Contact avec la cliente puis création d'un site WordPress avec injection de CSS, JS, PHP</p>
-                    <p class="experience-site"><a href="https://v2.ausalondedanse.fr/" target="_blank">ausalondedanse.fr</a></p>
+                <div>
+                    <label for="email"></label>
+                    <input type="email" name="user-email" id="email" placeholder="Votre mail">
                 </div>
-            </div>
-            <div class="experience">
-                <div class="title-experience">
-                    Graphiste </br><span>JCDecaux</span>
+                <div>
+                    <div><label for="msg"></label></div>
+                    <div><textarea name="user-msg" id="msg" cols="30" rows="10" placeholder="Votre message"></textarea> </div>
                 </div>
-                <div class="content-experience">
-                    <p class="experience-duration">2005 - Aujourd'hui</p>
-                    <p class="experience-langage">Suite Adobe <br/> Indesign / Photoshop / Illustrator</p>
-                    <p class="experience-support">Print</p>
-                    <p class="experience-description">Flyers, Illustrations, Affiches. Communication graphique des systèmes de Vélos en Libre-Service.</p>
-                </div>
-            </div>
-            <div class="experience">
-                <div class="title-experience">
-                    Développeur Web</br><span>Improactif</span> 
-                </div>
-                <div class="content-experience">
-                    <p class="experience-duration">2019 - 2022</p>
-                    <p class="experience-langage">WordPress / Suite Adobe</p>
-                    <p class="experience-support">Web / Print</p>
-                    <p class="experience-description">Création du site de l'entreprise, Brochures, Flyers pour la communication auprès des collectivités</p>
-                    <p class="experience-site"><a href="https://www.improactif.com/" target="_blank">improactif.com</a></p>
-                    </p>
-                </div>
-            </div>
+                <p>
+                    <button id="button-form" type="submit">Envoyez votre Message</button>
+                </p>
+            </form>
         </div>
     </main>
     <footer>
-        <button class="button-contact-footer"><a href="./contact.html">Contactez-moi</a></button>
         <div class="legend-footer">// Thomas Bétend // <a href="tel:+33659220572">0659220572</a> // <br/>Développeur Web / Applications mobiles / Front End / Back End</div>
         <div class="pictos-footer">
             <div class="picto-social-footer2">
