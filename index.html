@@ -1,18 +1,127 @@
-<!DOCTYPE html><html lang="en"><head>
-  <meta charset="utf-8">
-  <title>LeagueOfLegendsTestCFM</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
-  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-  <style type="text/css">@font-face{font-family:'Material Icons';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/materialicons/v139/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');}.material-icons{font-family:'Material Icons';font-weight:normal;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-feature-settings:'liga';-webkit-font-smoothing:antialiased;}</style>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <style type="text/css">@font-face{font-family:'Pirata One';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/pirataone/v22/I_urMpiDvgLdLh0fAtofhiGOrr3CZZ7_6w.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Pirata One';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/pirataone/v22/I_urMpiDvgLdLh0fAtofhi-Orr3CZZ4.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}</style>
-<style>*{background-color:#000}:root{--color1:rgb(255, 15, 143);--color2:rgb(60, 60, 60)}</style><link rel="stylesheet" href="styles.fb2d69badf9df0d2.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.fb2d69badf9df0d2.css"></noscript></head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="nav-bar.css">
+    <link rel="stylesheet" href="logo.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="./logo-tb-01.png">
+</head>
 <body>
-  <app-root></app-root>
-<script src="runtime.8ed66227bfdbe666.js" type="module"></script><script src="polyfills.02126b4a483c49a0.js" type="module"></script><script src="main.fd4e18bbd0fbefdd.js" type="module"></script>
+    <nav class="nav-bar">
+        <div class="button-home">
+            <a href="./index.html" type="button"><img src="./logo-tb-05.png" alt="picto tb"></a>
+        </div>
+        <div class="button-menu-burger">
+            <a href="#" id="button-menu-burger" type="button"><img src="./icons8-menu-arrondi-50.png" alt="icone menu"></a>
+        </div>
+        <div class="menu-laptop">
+            <a href="./experiences.html" class="link-black"><p>Expériences</p></a>
+            <a href="./stack.html" class="link-black"><p>Stack</p></a>
+            <a href="./realisations.html" class="link-black"><p>Réalisations</p></a>
+            <a href="./cursus.html" class="link-black"><p>Cursus</p></a>
+            <a href="./contact.html" class="link-black"><p>Contact</p></a>
+        </div>
+        <menu class="menu-hide" id="menu-hide">           
+            <a href="#" id="button-menu-hide"><img src="./croix-blanche.png" alt="croix blanche"></a>
+            <ul>
+                <li><a class="link-black" href="./index.html">Home</a></li>
+                <li><a class="link-black" href="./experiences.html">Expériences</a></li>
+                <li><a class="link-black" href="./stack.html">Stack</a></li>
+                <li><a class="link-black" href="./realisations.html">Réalisations</a></li>
+                <li><a class="link-black" href="./cursus.html">Cursus</a></li>
+                <li><a class="link-black" href="./contact.html">Contact</a></li>
+            </ul>
+        </menu>
+    </nav>
+    <main>
+        <div class="cursor"></div>
+        <section class="presentation">
+            <div class="personal-details">
+                <div class="title">Thomas Bétend</div>
+                <div class="title2">Développeur Web</div>
+                <div class="title3">Sites / Applications mobiles</div>
+                <div class="grey-line1"></div>
+                <div class="title4">Front End / Back End</div> 
+                <div class="title5">JavaScript / Angular / PHP / Symfony</div>
+                <div class="links">
+                    <button class="button-contact"><a href="./contact.html">Contactez-moi</a></button>
+                </div> 
+            </div> 
+            <div class="image-central">
+                <img src="./visuel_central2.png" alt="illustration ordinateur" id="image-central">
+            </div>div>
+        </section>
+        <div class="grey-line2"></div>
+        <section class="big-buttons">
+            <div class="pave">
+                <a href="./experiences.html">
+                    <div class="pave-image"><img src="./icons8-experience-64.png" alt="picto experience"></div>
+                    <div class="title-pave">
+                        Expériences
+                    </div>
+                    <div>
+                        <a href="./experiences.html"><button class="button-pave">En savoir plus</button></a>
+                    </div>
+                </a>
+            </div>
+            <div class="pave">
+                <a href="./stack.html">
+                    <div class="pave-image"><img src="./icons8-blockchain-technology-50.png" alt="picto experience"></div>
+                    <div class="title-pave">
+                        Stack
+                    </div>
+                    <div>
+                        <a href="./stack.html"><button class="button-pave">En savoir plus</button></a>
+                    </div>
+                </a>
+            </div>                     
+            <div class="pave">
+                <a href="./realisations.html"> 
+                    <div class="pave-image"><img src="./icons8-eye-96.png" alt="picto eye"></div>
+                    <div class="title-pave">
+                        Réalisations
+                    </div>
+                    <div>
+                        <button class="button-pave"><a href="./realisations.html">En savoir plus</a></button>
+                    </div>
+                </a>
+            </div>
+            <div class="pave">
+                <a href="./cursus.html">
+                    <div class="pave-image"><img src="./icons8-learn-study-64.png" alt="picto study"></div>
+                    <div class="title-pave">
+                            Cursus
+                    </div>
+                    <div>
+                        <button class="button-pave"><a href="./cursus.html">En savoir plus</a></button>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="legend-footer">// Thomas Bétend // <a href="tel:+33659220572">0659220572</a> // <br/>Développeur Web / Applications mobiles / Front End / Back End</div>
+        <div class="pictos-footer">
+            <div class="picto-social-footer2">
+                <a href="https://fr.linkedin.com/in/thomas-betend-31427518" target="_blank" type="button">
+                    <img src="./LinkedIn-Symbole2.png" alt="logo linkedin">
+                </a>
+            </div>
+        </div>
+    </footer>
 
-</body></html>
+    <script src="./menu.js"></script>    
+</body>
+
+</html>
+
